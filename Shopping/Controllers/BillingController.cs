@@ -13,7 +13,16 @@ namespace Shopping.Controllers
         // GET: BillingController
         public ActionResult Index()
         {
-            return View("_BillingPartial",new BillingAddress());
+            var model = new Commonview();
+            model.BillingCreate = new BillingAddress();
+            model.ShippingCreate = new ShippingAddress();
+            model.AddProduct = new AddProduct();
+           
+            
+
+
+            return View("Mainview",model);
+          
         }
 
         // GET: BillingController/Details/5
