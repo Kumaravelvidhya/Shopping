@@ -10,18 +10,20 @@ namespace Shopping.Controllers
 {
     public class BillingController : Controller
     {
+        private object AddProduct;
+
         // GET: BillingController
+
         public ActionResult Index()
         {
+
             var model = new Commonview();
             model.BillingCreate = new BillingAddress();
             model.ShippingCreate = new ShippingAddress();
             model.AddProduct = new AddProduct();
+            model.List = new List<AddProduct>();
+            return View("Mainview", model);
            
-            
-
-
-            return View("Mainview",model);
           
         }
 
@@ -34,6 +36,7 @@ namespace Shopping.Controllers
         // GET: BillingController/Create
         public ActionResult Create()
         {
+           
             return View();
         }
 

@@ -12,8 +12,8 @@ namespace DataAccessLayer
 
         public ShippingAddress ShippingCreate { get; set; }
 
-        public AddProduct AddProduct { get; set; }
-      
-       /* public List<AddProduct> List { get; set; }*/
+        public AddProduct AddProduct { get; set; }     
+
+        public List<AddProduct> List { get; set; }
     }
 }

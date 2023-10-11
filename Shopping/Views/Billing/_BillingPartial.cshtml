@@ -17,17 +17,28 @@
                 <span asp-validation-for="Address" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Address2" class="control-label"></label>
-                <input asp-for="Address2" class="form-control" />
-                <span asp-validation-for="Address2" class="text-danger"></span>
+                @*<label asp-for="Address2" class="control-label"></label>*@
+
+                <select asp-for="Address2" class="form-control" />
+                <option>Select city</option>
+                <option>SRM</option>
+                <option>KRCT</option>
+                <option>MKCE</option>
+                <option>HICET</option>
+                <option>PSG</option>
+                <option>IIIT</option>
+                <option>MIT</option>
+                @*<span asp-validation-for="Address2" class="text-danger"></span>*@
+
+                </select>
             </div>
             <div class="form-group">
-                <label asp-for="City" class="control-label"></label>
+                @*<label asp-for="City" class="control-label"></label>*@
                 <input asp-for="City" class="form-control" />
                 <span asp-validation-for="City" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="State" class="control-label"></label>
+                @*<label asp-for="State" class="control-label"></label>*@
                 <input asp-for="State" class="form-control" />
                 <span asp-validation-for="State" class="text-danger"></span>
             </div>
